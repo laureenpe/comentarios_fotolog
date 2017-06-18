@@ -37,7 +37,26 @@ function show(element) { //Mostrar elementos
     element.classList.remove('hide');
 }
 
-//SET ITEM: Crear item
-//SESSION STORAGE:
 
-//CREATE BY LAUREENPE
+//Limpiar los comentarios
+var cleanData = document.getElementById("clean-data");//Busco el elemento
+cleanData.addEventListener("click", clean);// elemento sobre el cual quiero que actue
+
+
+function clean(){//Esta funciòn busca el contenedor sobre el cual va a limpiar el elemnto, llamese PADRE 
+	var container = document.getElementById("comment-appear");
+	container.innerHTML = "";
+}
+
+// limpiar el almacenamiento generado por el localStorage
+function cleanAll(){
+	localStorage.clear();
+	showInformation();//llamo a showinformation para que use esta funcion en el boton usado para borrar datos
+}
+
+//SET ITEM: Crear item
+//SESSION STORAGE
+
+//CREATED BY LAUREENPE
+
+
