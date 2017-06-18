@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>FOTOLOG - ..::ÁrÉnItÁ .´´´ ÁmíGáS x CrÉw::..</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Yanone+Kaffeesatz" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
+
 </head>
+
 <body>
 	<header>
 		<div class="container">
@@ -52,9 +56,9 @@
 				<div class="col-md-offset-3 col-md-6">
 					<form Name="formulario">
 						<h3>Nombre</h3>
-						<input type="text" id="clave">
+						<input type="text" id="name">
 						<h3>Comentario</h3>
-						<textarea id="valor"></textarea>
+						<textarea id="comment"></textarea>
 					</form>
 				</div>
 			</div>
@@ -67,13 +71,33 @@
 			</div>
 		</div>
 	</section>
+	<section class="save">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6">
+					<button id="record" type="button">Guardar</button>
+					<button type="butto">Limpiar Datos</button>
+				</div>
+			</div>
+		</div>
+		<!--CONTAINER OF COMMENTS-->
+		<div class="row">
+			<div class="col-md-offset-3 col-md-6">
+
+				<div class="box-comment" id="comment-appear"></div>
+
+			</div>
+		</div>
+
+	</section>
 	<footer>
 		<div class="row">
 			<div class="col-md-12">
-				<p class="text-center">Laboratoria 2017</p>
+				<p class="text-center"> <i class="fa fa-gratipay" aria-hidden="true"></i> Laboratoria 2017 <i class="fa fa-gratipay" aria-hidden="true"></i></p>
 			</div>
 		</div>
 	</footer>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
